@@ -1,0 +1,18 @@
+//= require active_admin/base
+function ajaxCall()
+{	
+    $.ajax({
+        //url: "http://localdev.com:3000/ajax_call",
+        url: "http://localdev.com:3000/admin/admin_users/1/ajax_call_new",
+        type: 'GET',
+        beforeSend: function(){
+            //load_writter();
+        },
+        success: function(response){
+        	alert("success")            
+        },
+        complete: function(){
+            //load_completer();
+        }
+    });
+}
