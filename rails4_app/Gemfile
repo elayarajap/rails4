@@ -34,6 +34,10 @@ gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
 
+group :test do
+  gem 'pullreview-coverage', require: false
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
